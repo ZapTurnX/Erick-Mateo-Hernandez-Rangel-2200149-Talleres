@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #a004e9, #1539db, #010d22);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.body form{
+color: #555;
+}
+.text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: 0 0px 20px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    background-color: rgba(24, 4, 71, 0.89);
+	border-radius:3px;
+	padding:50px 100px;
+}
+.input-container{
+	position: relative;
+	margin-bottom:15px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    pointer-events:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.btn{
+	color:white;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:30px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+
+}
+.btn:right{
+	content:"";
+	position:absolute;
+	background:rgba(0, 0, 0, 0.5);
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+select {
+    border: none;
+    background-color: transparent;
+	color: #fff;	
+ 	outline:none;
+	border-bottom:1px solid #555;
+	font-size: 16px;
+}
+select option{
+	color: black;
+}
+.input-container select:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
